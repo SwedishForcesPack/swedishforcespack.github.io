@@ -1,0 +1,17 @@
+<div class="container" id="images">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Images</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for image in page.images %}
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <div class="embed-responsive embed-responsive-4by3 image-container">
+          <img src="{{ image.path }}" alt="{{ image.title }}" class="img-rounded img-responsive">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
