@@ -9,7 +9,7 @@
     {% for image in page.images %}
       <div class="col-lg-3 col-md-4 col-xs-6">
         <div class="embed-responsive embed-responsive-16by9 image-container">
-          <a href="{{ image.path }}" target=_blank>
+          <a href="{{ image.path }}" target=_blank data-toggle="lightbox" data-gallery="images" data-type="image" data-title="{{ image.title }}">
             <img src="{{ image.path }}" alt="{{ image.title }}" class="img-rounded img-responsive">
           </a>
         </div>
