@@ -1,5 +1,18 @@
 ---
 title: Wamako | Swedish Forces Pack
+images:
+  -
+    path: images/wamako_backyard.jpg
+    title: Backyard
+  -
+    path: images/wamako_city.jpg
+    title: Capitol City
+  -
+    path: images/wamako_north.jpg
+    title: North Island
+  -
+    path: images/wamako_south.jpg
+    title: South Island
 ---
 
 <div class="container">
@@ -80,7 +93,7 @@ title: Wamako | Swedish Forces Pack
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="images">
   <div class="row">
     <div class="col-lg-12">
       <h2>Images</h2>
@@ -88,28 +101,12 @@ title: Wamako | Swedish Forces Pack
   </div>
 
   <div class="row">
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <div class="embed-responsive embed-responsive-4by3">
-        <img src="/a3/wamako/images/wamako_backyard.jpg" alt="..." class="img-rounded img-responsive">
+    {% for image in page.images %}
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <div class="embed-responsive embed-responsive-16by9 image-container">
+          <img src="{{ image.path }}" alt="{{ image.title }}" class="img-rounded img-responsive">
+        </div>
       </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <div class="embed-responsive embed-responsive-4by3">
-        <img src="/a3/wamako/images/wamako_city.jpg" alt="..." class="img-rounded img-responsive">
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <div class="embed-responsive embed-responsive-4by3">
-        <img src="/a3/wamako/images/wamako_north.jpg" alt="..." class="img-rounded img-responsive">
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <div class="embed-responsive embed-responsive-4by3">
-        <img src="/a3/wamako/images/wamako_south.jpg" alt="..." class="img-rounded img-responsive">
-      </div>
-    </div>
+    {% endfor %}
   </div>
-</>
+</div>
