@@ -1,5 +1,54 @@
 ---
 title: Arma 1 | Swedish Forces Pack
+images:
+  -
+    path: images/rbs56.jpg
+    title: Rbs 56
+  -
+    path: images/strv122.jpg
+    title: Strv 122
+  -
+    path: images/rb57.jpg
+    title: Rb 57
+  -
+    path: images/ikv91.jpg
+    title: Ikv 91
+  -
+    path: images/hkp15.jpg
+    title: Hkp 15
+  -
+    path: images/strf90.jpg
+    title: Strf 90
+  -
+    path: images/patgb203.jpg
+    title: Patgb 203
+  -
+    path: images/pvpj1110.jpg
+    title: Pvpj 1110
+  -
+    path: images/lvkv90.jpg
+    title: Lvkv 90
+  -
+    path: images/viggen.jpg
+    title: SAAB Viggen
+  -
+    path: images/russians.jpg
+    title: Russians
+  -
+    path: images/ssg.jpg
+    title: SSG
+  -
+    path: images/cobra.jpg
+    title: AH-1 Cobra
+  -
+    path: images/police.jpg
+    title: Police
+  -
+    path: images/rbs97.jpg
+    title: Rbs 97
+  -
+    path: images/u137.jpg
+    title: U137
 ---
 
 <div class="container">
@@ -15,4 +64,22 @@ title: Arma 1 | Swedish Forces Pack
 
 <div class="container" id="downloads">
   <h2>Downloads</h2>
+</div>
+
+<div class="container" id="images">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Images</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for image in page.images %}
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <div class="embed-responsive embed-responsive-16by9 image-container">
+          <img src="{{ image.path }}" alt="{{ image.title }}" class="img-rounded img-responsive">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
