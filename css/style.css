@@ -1,6 +1,6 @@
 body {
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding-bottom: 75px;
+  padding-top: 75px;
 }
 
 #images .image-container {
@@ -13,6 +13,7 @@ body {
 	margin-top: -19px;
 	height: 0;
 }
+
 #start-video {
 	position: absolute;
 	top: 0;
