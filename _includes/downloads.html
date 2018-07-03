@@ -1,0 +1,39 @@
+<div class="container" id="downloads">
+  <h2>Downloads</h2>
+
+  {% if page.downloads.armaholic || page.downloads.steam || page.downloads.withsix %}
+    <div class="row">
+      {% if page.downloads.steam %}
+        <div class="col-md-4">
+          <strong class="d-block">Steam Workshop</strong>
+          {% include downloads/steam_workshop.html id=page.downloads.steam %}
+        </div>
+      {% endif %}
+
+      {% if page.downloads.armaholic %}
+        <div class="col-md-4">
+          <strong class="d-block">Armaholic</strong>
+          {% include downloads/armaholic.html id=page.downloads.armaholic %}
+        </div>
+      {% endif %}
+
+      {% if page.downloads.withsix %}
+        <div class="col-md-4">
+          <strong class="d-block">withSIX</strong>
+          {% include downloads/withsix.html link=page.downloads.withsix %}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if page.downloads.other %}
+    {% for download in page.downloads.other %}
+      <p>
+        <a href="{{ download.link }}" class="btn btn-{{ download.color }} btn-lg">
+          <span class="fa fa-save"></span>
+          {{ download.title }}
+        </a>
+      </p>
+    {% endfor %}
+  {% endif %}
+</div>
