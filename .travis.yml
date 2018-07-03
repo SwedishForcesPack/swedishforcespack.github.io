@@ -4,7 +4,9 @@ cache: bundler
 
 rvm: 2.3.1
 
-script: bundle exec rake test
+script:
+  - bundle exec rake test
+  - bundle exec danger
 
 env:
   global:
