@@ -1,5 +1,9 @@
 ---
 title: Finnish Forces Pack
+downloads:
+  armaholic: 32754
+  steam: 917042703
+  withsix: http://withsix.com/p/Arma-3/mods/alMWxl5wPEGxzlw_zxlxnA/SFP-Finnish-Forces-Pack
 images:
   -
     path: images/soldiers.jpg
@@ -86,35 +90,7 @@ videos:
   </div>
 </div>
 
-<div class="container" id="downloads">
-  <h2>Downloads</h2>
-
-  <div class="row">
-    <div class="col-md-4">
-      <strong>Steam Workshop</strong>
-      {%
-        include downloads/steam_workshop.html
-        id="917042703"
-      %}
-    </div>
-
-    <div class="col-md-4">
-      <strong>Armaholic</strong>
-      {%
-        include downloads/armaholic.html
-        id="32754"
-      %}
-    </div>
-
-    <div class="col-md-4">
-      <strong>withSIX</strong>
-      {%
-        include downloads/withsix.html
-        link="http://withsix.com/p/Arma-3/mods/alMWxl5wPEGxzlw_zxlxnA/SFP-Finnish-Forces-Pack"
-      %}
-    </div>
-  </div>
-</div>
+{% include downloads.html %}
 
 {% include images_16_9.html %}
 
