@@ -12,7 +12,10 @@ task :test do
         headers: {
           'User-Agent' => 'html-proofer'
         }
-      }
+      },
+      url_ignore: [
+        "https://twitter.com/sfpmod"
+      ]
     }
   ).run
 end
