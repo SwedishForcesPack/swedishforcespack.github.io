@@ -1,21 +1,12 @@
 <div class="container" id="downloads">
   <h2>Downloads</h2>
 
-  {% if page.downloads.armaholic || page.downloads.steam %}
+  {% if page.downloads.steam %}
     <div class="row">
-      {% if page.downloads.steam %}
-        <div class="col-md-4">
-          <strong class="d-block">Steam Workshop</strong>
-          {% include downloads/steam_workshop.html id=page.downloads.steam %}
-        </div>
-      {% endif %}
-
-      {% if page.downloads.armaholic %}
-        <div class="col-md-4">
-          <strong class="d-block">Armaholic</strong>
-          {% include downloads/armaholic.html id=page.downloads.armaholic %}
-        </div>
-      {% endif %}
+      <div class="col-md-4">
+        <strong class="d-block">Steam Workshop</strong>
+        {% include downloads/steam_workshop.html id=page.downloads.steam %}
+      </div>
     </div>
   {% endif %}
 
