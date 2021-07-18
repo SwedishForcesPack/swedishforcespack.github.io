@@ -8,14 +8,9 @@ task :test do
     {
       check_img_http: true,
       enforce_https: true,
-      typhoeus: {
-        followlocation: true,
-        ssl_verifypeer: false,
-        headers: {
-          'User-Agent' => 'html-proofer'
-        }
-      },
       url_ignore: [
+        "https://www.bohemia.net/community/licenses/arma-public-license-share-alike",
+        "https://www.bohemia.net/community/licenses/licensed-data-packages",
         "https://twitter.com/sfpmod"
       ]
     }
