@@ -9,6 +9,7 @@ task :test do
       check_img_http: true,
       enforce_https: true,
       url_ignore: [
+        "https://www.artstation.com/kimroyale",
         "https://www.bohemia.net/community/licenses/arma-public-license-share-alike",
         "https://www.bohemia.net/community/licenses/licensed-data-packages",
         "https://twitter.com/sfpmod"
